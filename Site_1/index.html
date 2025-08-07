@@ -3,29 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <title>Meu Blog Simples</title>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <style>
-    h2{
+
+    body{
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .cabecalho{
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu{
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .menu a {
+      color: white;
+      margin: 0 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .menu a:hover{
+      text-decoration: underline;
       color: red;
+      transition: 1s;
+    }
+
+    .conteudo{
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .category,
+    .coment,
+    .post {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom:20px;
+      
     }
   </style>
 
   <body>
-    <div>
+    <div class="cabecalho">
       <h1>Meu Blog</h1>
       <p>Aprendendo HTML e CSS</p>
     </div>
 
-    <div>
+    <div class="menu">
       <a href="#">Início</a>
       <a href="#">Sobre</a>
       <a href="#">Contato</a>
     </div>
 
-    <div>
+    <div  class="conteudo">
       <!-- Posts -->
-      <div>
+      <div class="post">
         <h2>Meu Primeiro Post</h2>
         <p>
           Esse é o conteúdo do meu primeiro post. Aqui estou aprendendo como usar HTML para
@@ -38,7 +85,7 @@
       </div>
 
       <!-- Categorias -->
-      <div>
+      <div class="category">
         <h2>Categorias</h2>
         <ul>
           <li><a href="#">HTML</a></li>
@@ -48,7 +95,7 @@
       </div>
 
       <!-- Comentários -->
-      <div>
+      <div class="coment">
         <h2>Comentários</h2>
         <p><strong>João:</strong> Muito legal esse blog!</p>
         <p><strong>Ana:</strong> Estou aprendendo bastante.</p>
@@ -59,5 +106,7 @@
     <div>
       <p>&copy; 2025 Meu Blog. Todos os direitos reservados.</p>
     </div>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
