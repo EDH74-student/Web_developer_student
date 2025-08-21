@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Formúlario</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      <div class="login_pag">
+        <div>
+          <label for="nome">Usuário:</label>
+          <input type="text" id="nome" />
+        </div>
+
+        <div>
+          <label for="senha">Senha:</label>
+          <input type="text" id="senha" />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" />
+        </div>
+
+        <div>
+          <p>Meu hobbie</p>
+          <input type="checkbox" name="jogar" id="jogar" value="jogar" />
+          <label for="jogar">Jogar</label>
+          <input
+            type="checkbox"
+            name="Escultar_musica"
+            id="Escultar_musica"
+            value="Escultar Musica"
+          />
+          <label for="jogar">Escultar Musica</label>
+        </div>
+
+        <div>
+          <p>Selecione seu Gênero</p>
+          <input
+            type="checkbox"
+            name="Maculino"
+            id="Masculino"
+            value="Masculino"
+          />
+          <label for="jogar">Masculino</label>
+          <input
+            type="checkbox"
+            name="Feminino"
+            id="Feminino"
+            value="Feminino"
+          />
+          <label for="jogar">Feminino</label>
+        </div>
+
+        <div>
+          <p>Mensagem</p>
+          <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+        </div>
+
+        <div>
+          <label for="estado">Estado:</label>
+          <select id="estado">
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+          </select>
+        </div>
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
