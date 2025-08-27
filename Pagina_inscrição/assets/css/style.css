@@ -37,8 +37,10 @@ body{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
     margin-bottom: 30px;
     color: white;
-     text-align: center; 
-    display:inline-block;
+}
+
+#login{
+    display: inline-block;
 }
 
 .texto input{
@@ -59,13 +61,18 @@ body{
     width: 20vw;
 }
 
+.texto button:hover{
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 footer p{
     background-color: #261B1B;
     margin: 0px;
     padding: 0px;
 
 }
-
     footer{
     background-color: #261B1B;
     margin: 0px;
