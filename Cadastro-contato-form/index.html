@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/" method="post">
+        <h1>Formulário de Contato</h1>
+
+        <div class="form-grupo">
+            <label for="nome"><h2>Nome:</h2></label><br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" maxlength="50" required>
+        </div>
+
+        <div class="form-grupo">
+            <label for="email"><h2>E-mail:</h2></label><br>
+            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+        </div>
+
+        <div class="form-grupo">
+            <label for="assunto"><h2>Assunto</h2></label><br>
+            <select name="assunto" id="assunto">
+                <option value="" disabled selected>Selecione...</option>
+                <option value="tecnologia">Tecnólogia</option>
+                <option value="games">Games</option>
+                <option value="musica">Musica</option>
+            </select>
+        </div>
+
+        <div class="form-grupo">
+            <label for="msg"><h2>Mensagem:</h2></label><br>
+            <textarea name="msg" id="msg" rows="5"  placeholder="Digite sua mensagem" maxlength="200"></textarea>
+        </div>
+
+        <div class="form-grupo">
+            <label for="satisfacao"><h2>Nível de satisfação (1 a 10)</h2></label><br>
+            <input type="range" name="satisfacao" id="satisfacao" min="1" max="10" id="ranged">
+        </div>
+        
+        <div id="termos">
+            <input type="checkbox" name="condicao" id="condicao" required> 
+            <strong>Aceito os termos e condições</strong>
+        </div>
+
+        <div class="form-grupo">
+            <label for="info"><strong>Informação do sistema</strong></label><br>
+            <input type="text" name="info" id="info" value="Formulário versão 1.0" readonly>
+        </div>
+
+        <div>
+            <button class="butao normal" type="submit">Enviar</button>
+            <button class="butao normal" type="button">Cancelar</button>
+            <button class="butao" type="button" disabled>Botão desabilitado</button>
+        </div>
+    </form>
+</body>
+</html>
